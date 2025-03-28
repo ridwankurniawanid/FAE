@@ -46,6 +46,7 @@ app = dash.Dash(__name__,
     suppress_callback_exceptions=True
 )
 
+server=app.server
 # Ensure the custom CSS file exists in the assets folder
 os.makedirs('assets', exist_ok=True)
 with open('assets/custom.css', 'w') as f:
