@@ -62,7 +62,7 @@ RIGHT_CHANNELS = []
 COMTRADE_RECORD = None
 signaldf = None
 significant = None  # Global variable untuk menyimpan hasil perhitungan
-sampling = 1000  # Set your sampling frequency here
+sampling = 25600  # Set your sampling frequency here
 
 # Function to process selected channels
 def process_selected_channels(selected_channels):
