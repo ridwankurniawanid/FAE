@@ -41,7 +41,7 @@ CUSTOM_STYLES = '''
 app = dash.Dash(__name__, 
     external_stylesheets=[
         dbc.themes.BOOTSTRAP,
-        {'href': '/assets/custom.css', 'rel': 'stylesheet'}
+        {'href': '/custom.css', 'rel': 'stylesheet'}
     ],
     suppress_callback_exceptions=True
 )
