@@ -1,0 +1,21 @@
+
+    .large-checkbox input[type="checkbox"] {
+        width: 20px;
+        height: 20px;
+        margin-right: 10px;
+    }
+    .large-checkbox label {
+        display: inline-flex;
+        align-items: center;
+        font-size: 16px;
+    }
+    .channel-table {
+        max-width: 600px;
+        margin: 0 auto;
+    }
+    .select-channel-btn {
+        margin-top: 15px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
