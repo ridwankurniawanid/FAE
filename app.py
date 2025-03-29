@@ -38,12 +38,10 @@ CUSTOM_STYLES = '''
 '''
 
 # Initialize the Dash app with Bootstrap and custom CSS
-app = dash.Dash(
-    __name__,
+app = dash.Dash(__name__, 
     external_stylesheets=[
         dbc.themes.BOOTSTRAP,
-        "https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.min.css",
-        "https://fonts.googleapis.com/css2?family=Ubuntu"
+        {'href': '/assets/custom.css', 'rel': 'stylesheet'}
     ],
     suppress_callback_exceptions=True
 )
@@ -530,4 +528,4 @@ def calculate_significant(n_clicks):
 
 # Main app runner
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(debug=False)
