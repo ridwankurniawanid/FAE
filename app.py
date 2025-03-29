@@ -38,10 +38,12 @@ CUSTOM_STYLES = '''
 '''
 
 # Initialize the Dash app with Bootstrap and custom CSS
-app = dash.Dash(__name__, 
+app = dash.Dash(
+    __name__,
     external_stylesheets=[
         dbc.themes.BOOTSTRAP,
-        {'href': '/custom.css', 'rel': 'stylesheet'}
+        "https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.min.css",
+        "https://fonts.googleapis.com/css2?family=Ubuntu"
     ],
     suppress_callback_exceptions=True
 )
