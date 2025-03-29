@@ -116,7 +116,7 @@ def signichange(signaldfull):
 # Function to calculate THD (Total Harmonic Distortion)
 def THDCALC(signal):
     N = len(signal)
-    fs = sampling
+    fs = 25600
     fft_result = np.fft.fft(signal)
     frequencies = np.fft.fftfreq(N, 1/fs)
     magnitude = np.abs(fft_result)[:N//2]
